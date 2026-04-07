@@ -2,42 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquaflex Designs - Premium Kitchen & Furniture Design</title>
-    <style>
-        /* Simple CSS - we'll add this later */
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-        }
-        .hero { 
-            background: #0A1A2F; 
-            color: white; 
-            padding: 100px 20px; 
-            text-align: center; 
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>For Thandeka 💖</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Aquaflex Designs</h1>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Crafting Your Vision, From Concept to Creation</h1>
-        <p>Premium Kitchen Designs, Built-In Cabinetry, and Custom Furniture</p>
-        <a href="contact.html" style="background: #00C2CB; color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px;">Book Free Consultation</a>
-    </section>
+    <!-- Background Floating Hearts -->
+    <div id="hearts-bg"></div>
 
-    <footer>
-        <p>&copy; 2024 Aquaflex Designs. All rights reserved.</p>
-    </footer>
+    <!-- Control Buttons -->
+    <button id="toggle-audio" class="control-btn">🔈</button>
+    <button id="toggle-fullscreen" class="control-btn">⛶</button>
+
+    <!-- Dramatic Entrance (short) -->
+    <div id="dramatic-entrance">
+        <div class="destiny-line">"Some love stories begin with a glance..."</div>
+    </div>
+
+    <!-- Magolis Story Container -->
+    <div id="magolis-story" style="display: none;">
+        <div class="story-card">
+            <div id="story-text"></div>
+            <div id="thandeka-photo-container" style="display: none;">
+                <img id="thandeka-photo" src="thandeka.jpg" alt="Thandeka">
+                <p class="photo-caption">✨ My Angel at Magolis ✨</p>
+            </div>
+            <button id="continue-after-story">Continue 💖</button>
+        </div>
+    </div>
+
+    <!-- Envelope -->
+    <div class="envelope" id="envelope" style="display: none;">
+        💌 CLICK ME BABY! 💌
+    </div>
+
+    <!-- Birthday Question -->
+    <div class="question-screen" id="questionScreen">
+        <h2>💖 Hey Thandeka! Quick Question... 💖</h2>
+        <p>When is my birthday?</p>
+        <input type="text" id="birthdayAnswer" placeholder="e.g., 21 October">
+        <button onclick="checkAnswer()">Submit 💕</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
